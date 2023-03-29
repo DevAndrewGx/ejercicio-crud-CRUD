@@ -45,14 +45,19 @@
             <td><?= $valor['Email'];?></td>
             <td><?= $valor['IdPais'];?></td>   
             
-            <td><a href="borrar.php" button type="button" class="btn btn-outline-danger">Borrar</button>
-        <i class="bi bi-trash-fill"></i></a></td>
-            <td><a href="modificar.php" button type="button" class="btn btn-outline-warning">Modificar</button>
-        <i class="bi bi-pencil-fill"></i></a></td>
+            <td><a  button type="button" class="btn btn-outline-danger" href="borrar.php? IdCliente=<?= $valor['IdCliente']?>">Borrar</button>
+            <i class="bi bi-trash-fill"></i></a></td>
+
+            <!-- <td><a  button type="button" class="btn btn-outline-warning" href="modificar.php? IdCliente=<?= $valor['IdCliente']?>">Modificar</button>
+        <i class="bi bi-pencil-fill"></i></a></td> -->
+       <td><a class="btn btn-primary" href="modificar.php?IdCliente=<?= $valor['IdCliente']?>">Modificar <i class="bi bi-pencil-fill"></i></a></td>
+
         <?php endforeach; ?>
         </tr>
         
+        
     </table>
+    </div>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
