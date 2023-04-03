@@ -24,6 +24,9 @@
     <title>Bootstrap Example</title>
 </head>
 <body>
+    <p><a href="nuevo.php" button type="button" class="btn btn-outline-success">Crear 
+        <i class="bi bi-plus-circle-dotted"></i>
+    </a></p>
     <div class="container">
         <table class="table">
         <tr>
@@ -50,7 +53,7 @@
 
             <!-- <td><a  button type="button" class="btn btn-outline-warning" href="modificar.php? IdCliente=<?= $valor['IdCliente']?>">Modificar</button>
         <i class="bi bi-pencil-fill"></i></a></td> -->
-       <td><a class="btn btn-primary" href="modificar.php?IdCliente=<?= $valor['IdCliente']?>">Modificar <i class="bi bi-pencil-fill"></i></a></td>
+       <td><a button type="button" class="btn btn-outline-warning" href="modificar.php?IdCliente=<?= $valor['IdCliente']?>">Modificar <i class="bi bi-pencil-fill"></i></a></td>
 
         <?php endforeach; ?>
         </tr>
